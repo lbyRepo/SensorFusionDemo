@@ -1,0 +1,4 @@
+# GNU Octave workspace and temporary files
+octave-workspace
+*.m~
+*.asv
