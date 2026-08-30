@@ -58,6 +58,26 @@ octave TwoBeacon2D.m   # figures 1-4  + console summary
 Prefer not to wait? All figures shown in the lessons are pre-rendered in
 [`figures/`](figures/).
 
+## Teaching site (GitHub Pages)
+
+`index.html` is a self-contained single-page version of the whole course: all 23
+figures are embedded, the layout is responsive, and mathematics renders via
+MathJax. To publish it:
+
+1. Push this repository to GitHub.
+2. **Settings → Pages → Source: Deploy from a branch → `main` / `(root)` → Save.**
+3. Your course is live at `https://<username>.github.io/<repo>/`.
+
+The page needs no build step to host; to regenerate it after editing the lessons,
+run:
+
+```bash
+python3 tools/build_site.py
+```
+
+(Only MathJax is loaded from a CDN — everything else, including all figures,
+travels inside the single HTML file.)
+
 ## How to read the error plots
 
 All Monte Carlo plots in this repository use one colour language:
